@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flex Slider Tutorial</title>
+    <link rel="stylesheet" type="text/css" href="flexslider/flexslider.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="flexslider/jquery.flexslider-min.js"></script>
+</head>
+
+<body>
+    <!-- Place somewhere in the <body> of your page -->
+    <div class="flexslider" style="width:400px">
+        <ul class="slides">
+            <li>
+                <img src="http://lorempixel.com/400/400/cats" />
+            </li>
+            <li>
+                <img src="http://lorempixel.com/400/400/sports" />
+            </li>
+            <li>
+                <img src="http://lorempixel.com/400/400/abstract" />
+            </li>
+            <li>
+                <img src="http://lorempixel.com/400/400/flower" />
+            </li>
+            <!-- items mirrored twice, total of 12 -->
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                animationLoop: false,
+                itemWidth: 150,
+                itemMargin: 20
+            });
+        });
+    </script>
+</body>
+
+</html>
